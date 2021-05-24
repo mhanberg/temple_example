@@ -40,7 +40,7 @@ defmodule TempleExample.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:temple, "~> 0.6.0"}
+      {:temple, "~> 0.6.1"}
     ]
   end
 

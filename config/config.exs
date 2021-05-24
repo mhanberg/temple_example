@@ -15,6 +15,8 @@ config :temple_example, TempleExampleWeb.Endpoint,
   pubsub_server: TempleExample.PubSub,
   live_view: [signing_salt: "aqhwnboW"]
 
+config :phoenix, :template_engines, exs: Temple.Engine
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

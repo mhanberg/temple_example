@@ -16,5 +16,5 @@
   "telemetry": {:hex, :telemetry, "0.4.3", "a06428a514bdbc63293cd9a6263aad00ddeb66f608163bdec7c8995784080818", [:rebar3], [], "hexpm", "eb72b8365ffda5bed68a620d1da88525e326cb82a75ee61354fc24b844768041"},
   "telemetry_metrics": {:hex, :telemetry_metrics, "0.6.0", "da9d49ee7e6bb1c259d36ce6539cd45ae14d81247a2b0c90edf55e2b50507f7b", [:mix], [{:telemetry, "~> 0.4", [hex: :telemetry, repo: "hexpm", optional: false]}], "hexpm", "5cfe67ad464b243835512aa44321cee91faed6ea868d7fb761d7016e02915c3d"},
   "telemetry_poller": {:hex, :telemetry_poller, "0.5.1", "21071cc2e536810bac5628b935521ff3e28f0303e770951158c73eaaa01e962a", [:rebar3], [{:telemetry, "~> 0.4", [hex: :telemetry, repo: "hexpm", optional: false]}], "hexpm", "4cab72069210bc6e7a080cec9afffad1b33370149ed5d379b81c7c5f0c663fd4"},
-  "temple": {:hex, :temple, "0.6.0", "94b7118253c211b978d03a756be4019e767a8e87b4e124fc4dc8c4caba903580", [:mix], [{:phoenix, ">= 0.0.0", [hex: :phoenix, repo: "hexpm", optional: true]}], "hexpm", "387cbcc1f66f84a99ccaab426374cdf17e4eb57adaf49f74449b7637b1f58f67"},
+  "temple": {:hex, :temple, "0.6.1", "c6edaa708d7a97e1e76a9585ceaa7cce65545fac055c3412605a8abaadc8b481", [:mix], [{:phoenix, ">= 0.0.0", [hex: :phoenix, repo: "hexpm", optional: true]}], "hexpm", "1cd79aba6bcf3fffc608185b44a3e6e257ef4a61f7858e7a785892fb95b0ca17"},
 }
