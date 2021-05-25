@@ -1,14 +1,5 @@
 defmodule TempleExampleWeb.Components.LinkList do
   import Temple.Component
-  alias Phoenix.Naming
-
-  def url_text(text, true) do
-    url_text(text, false) <> ", "
-  end
-
-  def url_text(text, false) do
-    Naming.humanize(text)
-  end
 
   defcomp Item do
     a class: "text-blue-500 hover:underline", href: @url do
