@@ -7,9 +7,12 @@ module.exports = {
     '../lib/temple_example_web/templates/**/*.html.eex',
     '../lib/temple_example_web/components/**/*.ex'
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        grey: defaultTheme.colors.gray
+      },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans]
       },

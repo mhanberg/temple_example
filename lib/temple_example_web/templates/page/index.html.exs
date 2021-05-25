@@ -12,14 +12,16 @@ div class: "grid grid-cols-3 gap-4 p-4 items-start" do
       end
 
       c Card.Body do
-        user.bio
+        text_to_html(user.bio, attributes: [class: "first:mt-0 mt-2"])
       end
 
-      c Card.Footer do
-        c LinkList, socials: user.socials do
-          slot :link, %{text: text, url: url} do
-            c LinkList.Item, url: url do
-              text
+      unless Enum.empty?(user.socials) do
+        c Card.Footer do
+          c LinkList, socials: user.socials do
+            slot :link, %{text: text, url: url} do
+              c LinkList.Item, url: url do
+                text
+              end
             end
           end
         end

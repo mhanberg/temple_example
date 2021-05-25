@@ -18,6 +18,12 @@ defmodule TempleExampleWeb.Components.LinkList do
 
   render do
     for {{social, url}, idx} <- Enum.with_index(@socials, 1) do
+      if idx > 1 do
+        li class: "text-blue-700" do
+          "/"
+        end
+      end
+
       li do
         span do
           slot :link, text: social, url: url, idx: idx

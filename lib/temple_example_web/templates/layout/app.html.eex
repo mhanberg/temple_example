@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -7,11 +7,19 @@
     <title>TempleExample · Phoenix Framework</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   </head>
-  <body class="bg-gray-100 text-gray-800 font-sans">
+  <body class="h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-grey-200 font-sans transition transition-colors ease-out">
     <main role="main" class="container mx-auto">
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <div x-data="{text: ['🌞', '🌚']}" class="flex justify-end">
+        <button
+          class="p-2 bg-transparent text-xl"
+          @click="document.documentElement.classList.toggle('dark'); text = text.reverse()"
+          x-text="text[0]"
+        >
+          🌞
+        </button>
+      </div>
       <%= @inner_content %>
     </main>
   </body>

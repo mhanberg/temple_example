@@ -6,6 +6,14 @@ const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+console.log("####################")
+console.log(process.env.TAILWIND_MODE)
+console.log("####################")
+
+console.log("####################")
+console.log(process.env.NODE_ENV)
+console.log("####################")
+
 module.exports = (env, options) => {
   const devMode = options.mode !== 'production';
 
